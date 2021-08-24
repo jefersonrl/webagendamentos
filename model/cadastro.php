@@ -43,7 +43,6 @@ class Cadastro extends Banco {
         return $this->observacao;
     }
 
-
     public function incluir(){
         return $this->setAgendamentos($this->getNome(),$this->getTelefone(),$this->getOrigem(),$this->getData_contato(),$this->getObservacao());
     }
