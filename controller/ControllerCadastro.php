@@ -1,12 +1,13 @@
 <?php
-require_once("../model/cadastro.php");
-class cadastroController{
+$root = realpath($_SERVER["DOCUMENT_ROOT"]);
+require_once("$root/agendamento-mysql/model/cadastro.php");
+
+class ControllerCadastro{
 
     private $cadastro;
 
     public function __construct(){
         $this->cadastro = new Cadastro();
-        $this->incluir();
     }
 
     private function incluir(){
@@ -22,5 +23,9 @@ class cadastroController{
             echo "<script>alert('Erro ao gravar registro!');</script>";
         }
     }
+
+    public function listar(){
+        return $result = $this->cadastro->getAgendamentos();
+    }
 }
-new cadastroController();
+new ControllerCadastro();
