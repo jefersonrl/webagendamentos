@@ -55,7 +55,7 @@ require_once("controller/ControllerCadastro.php");
 							for($i=0;$i<=count($resultado)-1;$i++){ 
 						?>
 								<tr>
-									<td scope="row"><?php print($resultado[$i]['nome']); ?></td>
+									<td scope="row"><?php echo $resultado[$i]['nome']; ?></td>
 									<td><?php echo $resultado[$i]['telefone']; ?></td>
 									<td><?php echo $resultado[$i]['origem']; ?></td>
 									<td><?php echo $resultado[$i]['data_contato']; ?></td>

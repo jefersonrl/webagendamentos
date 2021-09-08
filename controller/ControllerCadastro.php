@@ -8,6 +8,9 @@ class ControllerCadastro{
 
     public function __construct(){
         $this->cadastro = new Cadastro();
+        if($_GET['funcao'] == "cadastro"){
+            $this->incluir();
+        }
     }
 
     private function incluir(){
