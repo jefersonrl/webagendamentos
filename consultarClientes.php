@@ -35,7 +35,7 @@ require_once("controller/ControllerCadastro.php");
 		</div>
 		<div class="row">
 			<div class="card mb-3 col-12">
-				<div class="card-body">
+				<div class="card-body" style="margin: auto;">
 					<h5 class="card-title">Consultar - Contatos Agendados</h5>
 					<table class="table table-responsive table-hover" style="width: 100%;">
 						<thead class="table-active bg-primary">
