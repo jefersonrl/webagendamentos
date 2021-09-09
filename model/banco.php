@@ -29,7 +29,6 @@ class Banco{
         }else{
             return false;
         }
-
     }
 
     public function getAgendamentos() {
@@ -48,7 +47,7 @@ class Banco{
             }
             return $f_lista;
         } catch (Exception $e) {
-            print "Ocorreu um erro ao tentar Buscar Todos." . $e;
+            echo "Ocorreu um erro ao tentar Buscar Todos." . $e;
         }
     }
 }    

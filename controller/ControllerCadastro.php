@@ -28,7 +28,8 @@ class ControllerCadastro{
     }
 
     public function listar(){
-        return $result = $this->cadastro->getAgendamentos();
+        return $result = $this->cadastro->listar();
     }
 }
 new ControllerCadastro();
+?>
