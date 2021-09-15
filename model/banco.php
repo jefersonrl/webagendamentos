@@ -65,5 +65,14 @@ class Banco{
             return false;
         }
     }
+
+    public function deleteAgendamentos($id){
+        $stmt = $this->mysqli->query("DELETE FROM agendamentos WHERE `id` =  '" . $id . "';");
+        if( $stmt > 0){
+            return true ;
+        }else{
+            return false;
+        }
+    }
 }    
 ?>
